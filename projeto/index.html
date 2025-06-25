@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel S. Cezar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+
+            <li>
+                <a href="#techs" class="menu-link">Tecnologias</a>
+            </li>
+
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="./img/fotopportfolio.jpg" alt="profilePhoto" class="perfilPhoto">
+        <h1>Samuel S. Cezar</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-div">
+            <p class="sobre-p">Sou Desenvolvedor Front-End, com foco na criação de interfaces modernas, responsivas e
+                com boa performance. Tenho compromisso com a qualidade, aprendizado contínuo e soluções eficientes. Atuo
+                com responsabilidade, sempre buscando alinhar tecnologia às necessidades do negócio. Sou formado em
+                Análise e Desenvolvimento de Sistemas e estou preparado para contribuir em projetos desafiadores,
+                agregando valor com visão analítica, proatividade e conhecimento técnico.</p>
+        </div>
+    </section>
+
+    <section id="techs" class="techs">
+        <h2 class="techs-title">Tecnologias que uso</h2>
+        <h3 class="tech-p">Essas são as tecnologias com as quais tenho experiência ou estou em constante aprendizado
+        </h3>
+        <div class="div-techs">
+            <img src="./img/html.png" alt="html" title="HTML5" class="phototech">
+            <img src="./img/css.png" alt="css" title="CSS3" class="phototech">
+            <img src="./img/js.png" alt="Javascript" title="Javascript" class="phototech">
+            <img src="./img/ts.png" alt="Typescript" title="Typescript" class="phototech">
+
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos"> </section>
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-div">
+        <div class="projetos-div-card">
+            <a href="./store/index.html"  >
+                <img src="./img/sc-store.png" alt="" class="projects-img" >
+            </a>
+            <div class="projects-div-card-content" >
+                <h3 class="projects-title">SC Store</h3>
+                <p class="paragrafo-projects">Uma loja de produtos tecnológicos</p>
+            </div>
+        </div>
+
+        <div class="projetos-div-card">
+            <img src="./img/projeto2.png" alt="" class="projects-img">
+            <div class="projects-div-card-content">
+                <h3 class="projects-title">Projeto 2</h3>
+                <p class="paragrafo-projects">Descrição do projeto</p>
+            </div>
+        </div>
+
+        <div class="projetos-div-card">
+            <img src="./img/comingsoon.png" alt="" class="projects-img">
+            <div class="projects-div-card-content">
+                <h3 class="projects-title">Coming soon</h3>
+                <p class="paragrafo-projects">Coming soon...</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contato" class="contact">
+        <h2 class="contact-title">Entre em contato</h2>
+        <form class="contact-form" id="form" onsubmit="enviarWhats(event)">
+            <div class="name-form">
+                <input placeholder="Nome" class="grupo-form" id="namep">
+            </div>
+            <div class="name-form">
+                <textarea class="grupo-form" placeholder="Digite sua Mensagem" class="form-text" id="mensagem"
+                    rows="4"></textarea>
+                <button type="submit" class="form-button">Enviar Whatsapp</button>
+            </div>
+        </form>
+</body>
+
+</html>
