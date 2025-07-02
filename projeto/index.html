@@ -33,6 +33,17 @@
                 <a href="#contato" class="menu-link">Contato</a>
             </li>
         </ul>
+
+        <div class="bnt-switch">
+            <p class="title-switch">Switch Mode</p>
+            <label class="switch">
+                
+                <input type="checkbox" id="btn-switch" />
+                <span class="slider"></span>
+            </label>
+        </div>
+
+
     </nav>
 
     <main id="inicio" class="cabecalho">
@@ -47,11 +58,47 @@
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-div">
-            <p class="sobre-p">Sou Desenvolvedor Front-End, com foco na criação de interfaces modernas, responsivas e
-                com boa performance. Tenho compromisso com a qualidade, aprendizado contínuo e soluções eficientes. Atuo
-                com responsabilidade, sempre buscando alinhar tecnologia às necessidades do negócio. Sou formado em
-                Análise e Desenvolvimento de Sistemas e estou preparado para contribuir em projetos desafiadores,
-                agregando valor com visão analítica, proatividade e conhecimento técnico.</p>
+            <div class="sobre-p">
+                <h2>Como penso, trabalho e entrego valor através do código</h2>
+
+
+
+                <p>
+                    Acredito que desenvolver sistemas web vai muito além de escrever código. Envolve entender o problema
+                    de verdade e criar soluções que funcionem bem, sejam agradáveis de usar e tragam resultados
+                    concretos para quem precisa.
+                </p>
+
+                <p>
+                    Tenho como foco o front-end, com atenção especial à performance, organização de código e
+                    experiências que funcionem em qualquer dispositivo.
+                </p>
+
+                <p>
+                    Sempre que encaro um projeto — seja pessoal ou acadêmico — busco responder perguntas como:
+                </p>
+
+                <ul>
+                    <li>O que esse sistema está resolvendo?</li>
+                    <li>Como posso tornar isso mais simples e eficiente?</li>
+                    <li>Se eu fosse o usuário, eu teria prazer em usar isso?</li>
+                </ul>
+
+                <p>
+                    Me motivo diariamente pela resolução de problemas. Gosto do desafio de transformar uma ideia em algo
+                    funcional e elegante.
+                </p>
+
+
+
+                <p>
+                    Estou pronto para transformar problemas em soluções reais. E quando surgirem as oportunidades com
+                    clientes, meu objetivo será entregar não apenas sistemas — mas resultados.
+                </p>
+
+
+            </div>
+            </p>
         </div>
     </section>
 
@@ -60,10 +107,10 @@
         <h3 class="tech-p">Essas são as tecnologias com as quais tenho experiência ou estou em constante aprendizado
         </h3>
         <div class="div-techs">
-            <img src="./img/html.png" alt="html" title="HTML5" class="phototech">
-            <img src="./img/css.png" alt="css" title="CSS3" class="phototech">
-            <img src="./img/js.png" alt="Javascript" title="Javascript" class="phototech">
-            <img src="./img/ts.png" alt="Typescript" title="Typescript" class="phototech">
+            <img src="./img/html.png" alt="html" title="HTML5" class="phototech" onclick="pointerTechs(this)">
+            <img src="./img/css.png" alt="css" title="CSS3" class="phototech" onclick="pointerTechs(this)">
+            <img src="./img/js.png" alt="Javascript" title="Javascript" class="phototech" onclick="pointerTechs(this)">
+            <img src="./img/ts.png" alt="Typescript" title="Typescript" class="phototech" onclick="pointerTechs(this)">
 
         </div>
     </section>
