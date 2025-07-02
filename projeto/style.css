@@ -1,32 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 :root {
---primary: #4f46e5;
---secondary: #7c3aed;
---escuro: #0f172a;
---maisEscuro: #0a0f1c;
---claro: #e2e8f0;
---vidro: rgb(255, 255, 255 , 0.1);
+    --primary: #4f46e5;
+    --secondary: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgb(255, 255, 255, 0.1);
 
 
 }
 
-body{
+body {
     background-color: var(--escuro);
     color: var(--claro);
     transition: background-color 0.5s ease, color 0.5s ease, font-family 0.5s ease;
 }
 
-.navegacao{
+.navegacao {
     position: fixed;
     background: rgba(15, 23, 48, 0.8);
     width: 100%;
@@ -35,7 +35,7 @@ body{
 
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
     gap: 3rem;
@@ -44,7 +44,7 @@ body{
 }
 
 
-.menu-link{
+.menu-link {
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
@@ -54,7 +54,7 @@ body{
 
 }
 
-.menu-link::after{
+.menu-link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -65,12 +65,12 @@ body{
     transition: 0.5s ease;
 }
 
-.menu-link:hover::after{
-width: 100%;
+.menu-link:hover::after {
+    width: 100%;
 
 }
 
-.cabecalho{
+.cabecalho {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -80,158 +80,158 @@ width: 100%;
 
 }
 
-.perfilPhoto{
+.perfilPhoto {
     width: 400px;
     height: 400px;
     object-fit: cover;
     object-position: 0 3%;
-    box-shadow: 0 0 20px rgba(79, 70,229, 0.3);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro);
     animation: float 4s ease-in-out infinite;
     transition: filter 0.5s ease, box-shadow 0.5s ease;
 }
 
-h1{
+h1 {
     font-size: 3.5rem;
     color: var(--primary);
     font-weight: bold;
     margin: 20px;
 }
-.cabecalho-sub-titulo{
+
+.cabecalho-sub-titulo {
     font-size: 1.5rem;
     color: var(--claro);
 }
 
-.sobre{
-padding: 6rem 2rem;
+.sobre {
+    padding: 6rem 2rem;
 }
 
-.sobre-titulo{
-font-size: 3rem;
-color: var(--claro);
-text-align: center;
-margin-bottom: 20px;
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.sobre-div{
-padding: 2rem;
-max-width: 800px;
-margin: 0 auto;
-border-radius: 16px;
-border: 1px solid var(--vidro);
-background-color:rgb(255, 255, 255, 0.05);
-backdrop-filter: blur(10px);
+.sobre-div {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    background-color: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
 }
 
 .sobrep {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    line-height: 1.6;
 }
 
 .sobre-p h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color:var(--claro);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--claro);
 }
 
 .sobre-p p {
-  margin-bottom: 1rem;
-  color: var(--claro);
+    margin-bottom: 1rem;
+    color: var(--claro);
 }
 
 .sobre-p ul {
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
 }
 
 .sobre-p li {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 
-.techs-title{
-  font-size: 3rem;
-color: var(--claro);
-text-align: center;
-margin-bottom: 20px;  
+.techs-title {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.tech-p{
+.tech-p {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.div-techs{
-padding: 2rem 2rem;
-max-width: 800px;
-margin: 0 auto;
-border-radius: 16px;
-border: 1px solid var(--vidro);
-background-color:rgb(255, 255, 255, 0.05);
-backdrop-filter: blur(10px);
-display: flex;
-justify-content: center;
-gap: 2rem;
-cursor: pointer;
+.div-techs {
+    padding: 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    background-color: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
 
 }
 
-.phototech{
+.phototech {
     width: 150px;
     height: 150px;
     border-radius: 7px;
     transition: all 0.5s ease
-   
 }
 
- .phototech:hover{
-     box-shadow: 0 5 15px rgba(79, 70, 229, 0.4);
-     transform:  translateY(-10px) scale(1.07);
+.phototech:hover {
+    box-shadow: 0 5 15px rgba(79, 70, 229, 0.4);
+    transform: translateY(-10px) scale(1.07);
     transition: all 0.5s ease
-} 
+}
 
 .projetos {
     padding: 6rem 2rem;
 
 }
 
-.projetos-div-card{
+.projetos-div-card {
     background: rgb(255, 255, 255, 0.05);
     border-radius: 16px;
     backdrop-filter: blur(5px);
-    border:1px solid var(--vidro);
+    border: 1px solid var(--vidro);
     overflow: hidden;
     transition: all 0.5s ease;
     cursor: pointer;
-    
+
 }
 
-.projetos-titulo{
- text-align: center;
- font-size: 2.5rem;
- margin-bottom: 50px;
+.projetos-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
 }
 
-.projetos-div-card:hover{
-    box-shadow: 0 10px 20px rgba(79,70,229,0.2);
-    transform:  translateY(-10px) scale(1.07);
-  
-   }
+.projetos-div-card:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.07);
 
-.projects-img{
+}
+
+.projects-img {
     height: 200px;
     width: 100%;
     object-fit: cover;
 }
 
-.projetos-div{
+.projetos-div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -240,63 +240,63 @@ cursor: pointer;
 
 }
 
-.projects-title{
-margin-bottom: 5px;
+.projects-title {
+    margin-bottom: 5px;
 }
 
-.projects-div-card-content{
+.projects-div-card-content {
     padding: 1.2rem;
 }
 
-.paragrafos-projects
-{
+.paragrafos-projects {
     color: rgba(226, 232, 240, 0.8);
     line-height: 1.25rem;
 }
-.contact{
-padding: 6rem 2rem;
+
+.contact {
+    padding: 6rem 2rem;
 }
 
-.contact-title{
- text-align: center;
- font-size: 2.5rem;
- margin-bottom: 50px;
+.contact-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
 
 }
 
-.contact-form{
-max-width: 600px;
-margin: 0 auto;
-background: rgb(255, 255, 255, 0.05);
-backdrop-filter: blur(5px);
-padding: 2rem;
-border: 1px solid var(--vidro);
-border-radius: 16px;
-color: var(--claro);
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+    color: var(--claro);
 }
 
 
-.grupo-form{
-width: 100%;
-padding: 1rem;
-background: rgb(255, 255, 255, 0.05);
-border: 1px solid var(--vidro);
-border-radius: 8px;
-color: var(--claro);
-outline: none;
+.grupo-form {
+    width: 100%;
+    padding: 1rem;
+    background: rgb(255, 255, 255, 0.05);
+    border: 1px solid var(--vidro);
+    border-radius: 8px;
+    color: var(--claro);
+    outline: none;
 }
 
-.grupo-form:focus{
+.grupo-form:focus {
     border-color: var(--primary);
     box-shadow: 0 0 10px(79, 70, 229, 0.3);
     transition: 0.7s ease;
 }
 
-.name-form{
+.name-form {
     margin-bottom: 1.5rem;
 }
 
-.form-button{
+.form-button {
     color: var(--claro);
     background: linear-gradient(45deg, var(--primary), var(--secondary));
     padding: 1rem 2rem;
@@ -305,89 +305,92 @@ outline: none;
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
     margin-top: 1rem;
 }
 
-.form-button:hover{
+.form-button:hover {
     box-shadow: 0 5 15px rgba(79, 70, 229, 0.4);
     transform: translateY(-4px);
 }
 
-.particulas{
+.particulas {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background:  
-    radial-gradient(circle at 10% 20%, var(--primary) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--primary) 0%, transparent 20%), 
-    var(--maisEscuro);
+    background:
+        radial-gradient(circle at 10% 20%, var(--primary) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--primary) 0%, transparent 20%),
+        var(--maisEscuro);
 }
 
-@keyframes float{
-0%, 100%{
-    transform: translateY(0);
-}
-50%{
-    transform: translateY(-20px);
-}
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 28px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  background-color: #ccc;
-  border-radius: 14px;
-  transition: background-color 0.4s;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #ccc;
+    border-radius: 14px;
+    transition: background-color 0.4s;
 }
 
 .slider::before {
-  position: absolute;
-  content: "";
-  height: 24px;
-  width: 24px;
-  left: 2px;
-  bottom: 2px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  transition: transform 0.4s;
-  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 2px;
+    bottom: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: transform 0.4s;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 
-.switch input:checked + .slider {
-  background-color: #4caf50;
+.switch input:checked+.slider {
+    background-color: #4caf50;
 }
 
-.switch input:checked + .slider::before {
-  transform: translateX(22px);
+.switch input:checked+.slider::before {
+    transform: translateX(22px);
 }
 
 
-.bnt-switch{
+.bnt-switch {
     display: flex;
     align-items: right;
     justify-content: right;
@@ -395,12 +398,117 @@ outline: none;
     margin-bottom: 5px;
     gap: 1rem;
 }
-.title-switch{
+
+.title-switch {
     color: var(--claro);
     font-size: 1rem;
     left: 2px;
-  bottom: 2px;
+    bottom: 2px;
     margin-top: 0;
     margin-top: 2px;
 }
 
+
+
+
+/* abaixo style das folhas pra n esquecer kk */
+
+
+.folhas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.folha {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('./img/folha-anime.png');
+    background-size: cover;
+    animation: cairFolha linear infinite;
+    opacity: 0.8;
+    
+    
+}
+
+.folha:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+
+}
+
+.folha:nth-child(2) {
+    left: 17%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    
+}
+
+.folha:nth-child(3) {
+    left: 25%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    
+}
+
+.folha:nth-child(4) {
+    left: 30%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.folha:nth-child(5) {
+    left: 50%;
+    animation-duration: 14s;
+    animation-delay: 4s;
+}
+
+.folha:nth-child(6) {
+    left: 70%;
+    animation-duration: 11s;
+    animation-delay: 1s;
+}
+
+.folha:nth-child(7) {
+    left: 90%;
+    animation-duration: 13s;
+    animation-delay: 3s;
+}
+
+
+.folha:nth-child(8) {
+    left: 80%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.folha:nth-child(9) {
+    left: 85%;
+    animation-duration: 15s;
+    animation-delay: 4s;
+}
+
+.folha:nth-child(10) {
+    left: 60%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+@keyframes cairFolha {
+    0% {
+        top: -50px;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: 100%;
+        transform: rotate(360deg);
+    }
+}
