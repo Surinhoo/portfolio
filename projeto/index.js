@@ -36,6 +36,7 @@ switchBtn.addEventListener('change', () => {
     folhas.style.display = 'none'; // ❌ Esconde folhas
     nameClass.style.color = 'var(--primary)';
     titleBtn.textContent = "Switch Anime Mode";
+    formButton.style.background = 'var(--primary)';
   } else {
   
     body.style.setProperty('background-color', '#246724');
