@@ -176,9 +176,11 @@ section {
     z-index: 4;
     position: fixed;
     top: 50%;
-    left: -30%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    transition: 1s;
+    transition: 1s ease;
+    visibility: hidden;
+    opacity: 0;
 
 }
 
@@ -191,4 +193,70 @@ section {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99)15%, rgba(10, 12, 16, 0.7)50%, rgba(10, 10, 16, 0.99) 85%);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .header section {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+    }
+
+    .header section nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header section nav a {
+        margin: 0.5rem 0;
+        font-size: 1.6rem;
+    }
+
+    .box-main div h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .box-main div p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .box-main div {
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .box-about .about-container .about-text h3 {
+        text-align: center;
+    }
+
+    .box-about .about-container .about-text p {
+        text-align: center;
+    }
+
+    .modal iframe {
+        width: 90vw;
+        height: 300px;
+    }
+
+    .title-style {
+        font-size: 3rem;
+    }
+
+    .button-link {
+        padding: 0.8rem 2rem;
+        font-size: 1.5rem;
+    }
 }

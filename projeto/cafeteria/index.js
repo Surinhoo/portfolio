@@ -16,3 +16,16 @@ function hiddenModal(){
 function alertBtn(){
     alert('Clicando aqui poderá ir direto para um whatsapp de sua loja!')
 }
+
+
+function showModal() {
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+    maskModal.style.visibility = 'visible';
+}
+
+function hiddenModal() {
+    modal.style.visibility = 'hidden';
+    modal.style.opacity = '0';
+    maskModal.style.visibility = 'hidden';
+}

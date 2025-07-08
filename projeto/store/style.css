@@ -355,3 +355,122 @@ header nav ul li:hover::after {
     top: 20%;
     left: 70%;
 }
+
+
+/* abaixo responsividade */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden; /* evita scroll lateral */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    .title-bussines-sc,
+    .title-bussines {
+        margin-right: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    header nav ul li {
+        font-size: 1rem;
+    }
+
+    .list-items {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .item {
+        flex-direction: column;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .item-img img {
+        max-width: 80%;
+        max-height: 200px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .item-name {
+        font-size: 2.5rem;
+        bottom: 50px;
+        position: relative;
+    }
+
+    .item-title{
+         font-size: 2.5rem;
+        bottom: 50px;
+        position: relative;
+    }
+
+    .item-description {
+        font-size: 1rem;
+        max-width: 100%;
+        bottom: 50px;
+        position: relative;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        bottom: 50px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .arrows {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .arrow-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .indicators {
+        bottom: 20px;
+        gap: 10px;
+    }
+
+    .numbers {
+        font-size: 2rem;
+    }
+
+    .dot {
+        width: 20px;
+    }
+
+    .container::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    
+
+}
+
