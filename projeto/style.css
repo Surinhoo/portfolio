@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ;
 }
 
 html {
@@ -184,10 +185,39 @@ h1 {
 
 }
 
+.div-techs-studying {
+    padding: 2rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    background-color: rgb(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
+
+}
+
 .phototech {
     width: 150px;
     height: 150px;
     border-radius: 7px;
+    transition: all 0.5s ease
+}
+
+.react-tech{
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+
+.react-tech:hover {
+    box-shadow: 0 5 15px rgba(79, 70, 229, 0.4);
+    transform: translateY(-10px) scale(1.07);
     transition: all 0.5s ease
 }
 
