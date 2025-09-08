@@ -261,6 +261,12 @@ h1 {
     object-fit: cover;
 }
 
+.projects-img-gerador {
+    height: 200px;
+    width: 100%;
+    
+}
+
 .projetos-div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
