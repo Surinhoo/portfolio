@@ -54,3 +54,17 @@ switchBtn.addEventListener('change', () => {
 });
 
 const folhas = document.getElementById('folhas');
+
+function toggleReadMore() {
+  const moreText = document.querySelector(".more-text");
+  const btn = document.querySelector(".read-more-btn");
+
+  moreText.classList.toggle("open");
+  btn.classList.toggle("active");
+
+  if (moreText.classList.contains("open")) {
+    btn.innerHTML = '<span class="arrow">▲</span> Ler menos';
+  } else {
+    btn.innerHTML = '<span class="arrow">▼</span> Ler mais';
+  }
+}
